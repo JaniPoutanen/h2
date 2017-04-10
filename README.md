@@ -51,8 +51,12 @@ Nyt commit toimi, joten kirjoitin pyydettyyn kenttään Add README.md, jonka jä
 
 Tämä toimi.
 
+Apuna käytin [Tero Karvisen ohjetta](http://terokarvinen.com/2016/publish-your-project-with-github).
+
 ## Puppet modulin luonti
 
+Käytän eniten terminaalia, joten kokeilin tehdä muutoksia terminaalin asetuksiin. 
 
+Sivulta [http://askubuntu.com/questions/517677/how-to-get-a-colored-bash](http://askubuntu.com/questions/517677/how-to-get-a-colored-bash) löytyi vaihtoehtoja.
 
 
