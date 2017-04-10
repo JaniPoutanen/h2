@@ -81,6 +81,8 @@ Tuo helpottaa jokapäiväistä käyttöä.
 
 Onnistui:
 
+![Screenshot](terminal.png)
+
 Kopioin puppetin h2 kansioon menemällä kansioon /etc/puppet/modules ja antamalla komennon 
 
 	cp -r terminal /home/xubuntu/h2/
