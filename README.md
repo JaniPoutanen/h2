@@ -12,29 +12,29 @@ Laitteistona harjoituksessa toimi Lenovon IdeaPad G700, jonka suoritin on Intel 
 ##Github
 
 Ensimmäisenä avasin terminaalin ja ajoin komennot
-   $ sudo setxkbmap fi
-   $ sudo apt-get update
+	$ sudo setxkbmap fi
+	$ sudo apt-get update
 jotka vaihtoivat näppäimistön suomalaiseksi ja ajoivat päivitykset.
 
 Seuraavaksi asensin Puppetin ja Gitin.
-  $ sudo apt-get install puppet -y
-  $ sudo apt-get install git -y
+	$ sudo apt-get install puppet -y
+ 	$ sudo apt-get install git -y
 
 Tein h2 nimisen repositoryn Githubiin, jolle määritin lisenssiksi MIT. Kloonasin sen terminaalissa komennolla:
-   $ git clone https://github.com/JaniPoutanen/h2.git
+
+	$ git clone https://github.com/JaniPoutanen/h2.git
 
 Kotihakemistooni ilmestyi hakemisto h2, jossa on tiedosto LICENCE
 
-Aloitin tämän raportin kirjoittamisen Githubissa
+	$ nano README.md
+
+Loi tiedoston README.md h2 hakemistoon. Kirjoitin tämän raportin alun, jonka jälkeen tallensin työn ja annoin komennot:
+
+	$ git . add
+	$ git commit
+
+Committiin kirjoitin Add README.md, jonka jälkeen synkronoin Gittiin
+
+	$ git pull && git push
 
 
-
-
-Tein h2 nimisen repositoryn Githubiin, johon määritin lisenssiksi MIT. Tämän jälkeen aloitin kirjoittamaan tätä README tiedostoa samalla kun työskentelin puppetin parissa.
-
-
-
-
-
-
-Tässä osassa tehtävää käytin lähteenä Tero Karvisen sivua: http://terokarvinen.com/2016/publish-your-project-with-github](http://terokarvinen.com/2016/publish-your-project-with-github).
