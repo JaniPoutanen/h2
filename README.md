@@ -33,8 +33,26 @@ Loi tiedoston README.md h2 hakemistoon. Kirjoitin tämän raportin alun, jonka j
 	$ git . add
 	$ git commit
 
-Committiin kirjoitin Add README.md, jonka jälkeen synkronoin Gittiin
+Sain ilmoituksen: 
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+Tuo tarkoitti, etten ole kertonut kuka olen, joten annoin nuo pyydetyt komennot, jonka jälkeen tallensin salasanan tunniksi komennolla
+
+	$ git config --global credential.helper "cache --timeout=3600"
+
+Nyt commit toimi, joten kirjoitin pyydettyyn kenttään Add README.md, jonka jälkeen synkronoin Gittiin
 
 	$ git pull && git push
+
+Tämä toimi.
+
+## Puppet modulin luonti
+
+
 
 
