@@ -59,4 +59,30 @@ Käytän eniten terminaalia, joten kokeilin tehdä muutoksia terminaalin asetuks
 
 Sivulta [http://askubuntu.com/questions/517677/how-to-get-a-colored-bash](http://askubuntu.com/questions/517677/how-to-get-a-colored-bash) löytyi vaihtoehtoja.
 
+Tein polun /etc/puppet/modules/terminal/manifests, johon tein tiedoston init.pp
 
+	class terminal {
+	        file { '/home/xubuntu/.bashrc':
+        	content=>template('terminal/bash.bashrc.erb')
+        	}
+	}
+
+Kun seuraavaksi luon terminal kansioon kansion templates, voin tehdä sinne kopion alkuperäisestä kotihakemissa sijaitsevasta .bashrc tiedostosta ja korvata sen muokatulla.
+Siirryin siis kotihakemistooni komennolla cd, jossa komennot:
+
+	$ sudo cp .bashrc /etc/puppet/modules/terminal/templates/
+	$ sudo mv .bashrc bash.bashrc.erb
+
+Nyt voin muokata ohjeessa olevan rivin yksinkertaisesti poistamalla kommentoinnin.
+Lisään vielä alkuun aliaksen: alias update="sudo apt-get update"
+Tuo helpottaa jokapäiväistä käyttöä.
+
+	$ sudo puppet apply -e 'class {"terminal":}'
+
+Onnistui:
+
+Kopioin puppetin h2 kansioon menemällä kansioon /etc/puppet/modules ja antamalla komennon 
+
+	cp -r terminal /home/xubuntu/h2/
+
+ja lopuksi päivitin Gitin. Tämä tässä.
