@@ -30,7 +30,7 @@ Kotihakemistooni ilmestyi hakemisto h2, jossa on tiedosto LICENCE
 
 Loi tiedoston README.md h2 hakemistoon. Kirjoitin tämän raportin alun, jonka jälkeen tallensin työn ja annoin komennot:
 
-	$ git . add
+	$ git add .
 	$ git commit
 
 Sain ilmoituksen: 
